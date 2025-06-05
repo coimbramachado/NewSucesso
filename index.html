@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Sucesso Digital</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+
+  <div id="top"></div>
+  <nav>
+    <div class="logo">
+      <img src="asset/logo.png" alt="Logo" class="logo-img" />
+      Meu Sucesso Digital
+    </div>
+    <!-- Botão hamburguer -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul id="menu">
+      <li><a href="#top">Início</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#portifolio">Portifólio</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <a href="#contato" class="btn-fale-conosco">Fale Conosco</a>
+
+  </nav>
+
+  <!-- Exemplo de seções para o menu -->
+  <section id="inicio">
+    <div class="left">
+      <h1>Transforme sua presença digital com estratégia de <span class="destaque">marketing inovadoras</span></h1>
+      <p>Somos uma agência de marketing digital completa, focada em resultados mensuráveis e crescimento sustentável
+        para o seu negócio.</p>
+      <div class="buttons">
+        <button class="btn-contact" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+          Fale Conosco <i class="fas fa-arrow-right"></i>
+        </button>
+
+        <button class="btn-portfolio"
+          onclick="document.getElementById('portifolio').scrollIntoView({ behavior: 'smooth' });">
+          Ver Portfólio
+        </button>
+      </div>
+    </div>
+    </div>
+    <!-- Ícones com números -->
+
+    <div class="right">
+      <video autoplay muted loop playsinline width="200" controls>
+        <source src="asset\Video\teste.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+    <br><br>
+  </section>
+
+  <br></br>
+  <div class="icons-info">
+    <div class="icon-item">
+      <img src="asset\icones\line-chart.png" class="icon" />
+      <div class="text-container">
+        <span>95%</span>
+        <span>Taxa de Conversão</span>
+      </div>
+    </div>
+    <div class="icon-item">
+      <img src="asset\icones\cursor.png" class="icon" />
+      <div class="text-container">
+        <span>200+</span>
+        <span>Projetos Concluídos</span>
+      </div>
+    </div>
+    <div class="icon-item">
+      <img src="asset\icones\pessoas.png" class="icon" />
+      <div class="text-container">
+        <span>150+</span>
+        <span>Clientes Satifeitos</span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section id="servicos" style="padding:80px; min-height:200px;">
+    <h2>Nossos <span class="destaque-servico">Serviços</span></h2>
+
+    <div class="quadros-servicos">
+      <div class="quadro">
+        <i class="fas fa-comments"></i>
+        <h3>Consultoria</h3>
+        <p>Orientação especializada para o seu negócio digital.</p>
+      </div>
+      <div class="quadro">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Marketing Digital</h3>
+        <p>Estratégias para aumentar sua presença online.</p>
+      </div>
+      <div class="quadro">
+        <i class="fas fa-code"></i>
+        <h3>Desenvolvimento Web</h3>
+        <p>Criação de sites modernos e responsivos.</p>
+      </div>
+      <div class="quadro">
+        <i class="fas fa-search"></i>
+        <h3>SEO</h3>
+        <p>Otimização para mecanismos de busca.</p>
+      </div>
+      <div class="quadro">
+        <i class="fas fa-share-alt"></i>
+        <h3>Gestão de Redes Sociais</h3>
+        <p>Conteúdos estratégicos para engajamento.</p>
+      </div>
+      <div class="quadro">
+        <i class="fas fa-camera icon" style="color: #ff6f20;"></i> <!-- Ícone de Design Gráfico -->
+        <h3>Design Gráfico</h3> <!-- Título -->
+        <p>Criação de visuais impactantes para sua marca.</p> <!-- Descrição -->
+      </div>
+
+    </div>
+  </section>
+
+
+  </section>
+  <section id="portifolio" style="text-align: center;">
+    <h2>Nosso <span class="destaque-portifolio">Portfólio</span></h2>
+
+    <!-- Navbar - será removida no mobile -->
+    <nav class="mini-navbar">
+      <ul>
+        <li><a href="#" onclick="filterCategory(event, 'todos')" class="active">Todos</a></li>
+        <li><a href="#" onclick="filterCategory(event, 'marketing')">Marketing</a></li>
+        <li><a href="#" onclick="filterCategory(event, 'web')">Web</a></li>
+        <li><a href="#" onclick="filterCategory(event, 'social')">Social</a></li>
+        <li><a href="#" onclick="filterCategory(event, 'branding')">Branding</a></li>
+        <li><a href="#" onclick="filterCategory(event, 'seo')">SEO</a></li>
+        <li><a href="#" onclick="filterCategory(event, 'conteudo')">Conteúdo</a></li>
+      </ul>
+    </nav>
+
+    <!-- Quadros -->
+    <div class="quadro-container">
+      <div class="quadroPort" data-category="marketing">
+        <img src="https://via.placeholder.com/100" alt="Marketing">
+        <h3>Marketing</h3>
+        <p>Estratégias inovadoras para impulsionar negócios.</p>
+      </div>
+      <div class="quadroPort" data-category="web">
+        <img src="https://via.placeholder.com/100" alt="Web">
+        <h3>Web</h3>
+        <p>Criação de sites e soluções digitais incríveis.</p>
+      </div>
+      <div class="quadroPort" data-category="social">
+        <img src="https://via.placeholder.com/100" alt="Social">
+        <h3>Social</h3>
+        <p>Gestão de redes sociais para engajamento eficiente.</p>
+      </div>
+      <div class="quadroPort" data-category="branding">
+        <img src="https://via.placeholder.com/100" alt="Branding">
+        <h3>Branding</h3>
+        <p>Construção e fortalecimento de marcas poderosas.</p>
+      </div>
+      <div class="quadroPort" data-category="seo">
+        <img src="https://via.placeholder.com/100" alt="SEO">
+        <h3>SEO</h3>
+        <p>Otimização de sites para melhor ranqueamento.</p>
+      </div>
+      <div class="quadroPort" data-category="conteudo">
+        <img src="https://via.placeholder.com/100" alt="Conteúdo">
+        <h3>Conteúdo</h3>
+        <p>Produção de conteúdo relevante e de qualidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao" style="padding: 40px 20px;">
+    <div class="sobre-container"
+      style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; max-width: 1200px; margin: 0 auto;">
+
+      <!-- Logo à esquerda -->
+      <div class="sobre-logo" style="flex: 1 1 250px; text-align: center;">
+        <img src="asset/logo.png" alt="Logo" style="max-width: 100%; height: auto;">
+      </div>
+
+      <!-- Conteúdo à direita -->
+      <div class="sobre-conteudo" style="flex: 2 1 500px;">
+        <h3 style="font-size: 2rem; margin-bottom: 15px;">Meu sucesso digital</h3>
+        <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 30px;">
+          Somos uma empresa dedicada a impulsionar o sucesso digital dos nossos clientes por meio de soluções inovadoras
+          e personalizadas. Nossa equipe é formada por especialistas apaixonados pelo que fazem, sempre atentos às
+          tendências do mercado e focados em entregar resultados reais e mensuráveis. Priorizamos a excelência no
+          atendimento, o desenvolvimento de estratégias eficazes e a construção de relacionamentos duradouros. Seja para
+          pequenas ou grandes empresas, nosso compromisso é transformar desafios em oportunidades, gerando crescimento
+          sustentável e satisfação plena.
+        </p>
+
+        <!-- Caixa dos 4 ícones -->
+        <div class="sobre-icones" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+          <div class="icone-caixa"
+            style="flex: 1 1 200px; color: transparent; padding: 20px; border-radius: 8px; text-align: left;">
+            <i class="fas fa-lightbulb" style="font-size: 2rem; color: rgb(161, 52, 161); margin-bottom: 10px;"></i>
+            <h4>Estrategias</h4>
+            <p>Planejamento eficaz para atingir seu público-alvo.</p>
+          </div>
+
+          <div class="icone-caixa"
+            style="flex: 1 1 200px; color: transparent; padding: 20px; border-radius: 8px; text-align: left;">
+            <i class="fas fa-users" style="font-size: 2rem; color: rgb(161, 52, 161); margin-bottom: 10px;"></i>
+            <h4>Equipe Especializada</h4>
+            <p>Profissionais qualificados para entregar o melhor.</p>
+          </div>
+
+          <div class="icone-caixa"
+            style="flex: 1 1 200px; color: transparent; padding: 20px; border-radius: 8px; text-align: left;">
+            <i class="fas fa-handshake" style="font-size: 2rem; color:rgb(161, 52, 161); margin-bottom: 10px;"></i>
+            <h4>Foco no Cliente</h4>
+            <p>Atendimento personalizado e dedicado.</p>
+          </div>
+
+          <div class="icone-caixa"
+            style="flex: 1 1 200px; color: transparent; padding: 20px; border-radius: 8px; text-align: left;">
+            <i class="fas fa-chart-line" style="font-size: 2rem; color:rgb(161, 52, 161); margin-bottom: 10px;"></i>
+            <h4>Resultado Mensurável</h4>
+            <p>Monitoramos os KPIs para garantir o sucesso.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="secao">
+    <h2 class="titulo">O que Nossos <span class="destaque-cliente">Clientes</span> dizem!</h2>
+    <br></br>
+    <div class="carrossel-container">
+      <div class="carrossel-track">
+        <div class="depoimento">
+          <img src="asset/IMG/Cliente1.jpg" alt="Cliente 1" />
+          <p>"Excelente atendimento e produtos de qualidade. Recomendo muito!"</p>
+          <span>- João Silva</span>
+        </div>
+        <div class="depoimento">
+          <img src="asset/IMG/Cl2.jpg" alt="Cliente 2" />
+          <p>"Fiquei muito satisfeito com o suporte e agilidade nas entregas."</p>
+          <span>- Maria Souza</span>
+        </div>
+        <div class="depoimento">
+          <img src="asset/IMG/cl3.jpg" alt="Cliente 3" />
+          <p>"Profissionais dedicados, superaram minhas expectativas!"</p>
+          <span>- Carlos Pereira</span>
+        </div>
+        <div class="depoimento">
+          <img src="asset/IMG/cl5.jpg" alt="Cliente 5" />
+          <p>"Produto com qualidade acima do esperado!"</p>
+          <span>- Pedro Martins</span>
+        </div>
+
+        <div class="depoimento">
+          <img src="asset/IMG/cl7.jpg" alt="Cliente 5" />
+          <p>"Produto com qualidade acima do esperado!"</p>
+          <span>- Pedro Martins</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao">
+
+
+    <footer class="rodape">
+      <!-- Antes era texto-esquerda, agora é sucesso-digital -->
+      <div class="sucesso-digital">
+        <h3>Sucesso Digital</h3>
+        <p>Conecte-se com a gente nas redes sociais para acompanhar todas as novidades e conteúdos exclusivos!</p>
+        <div class="redes-sociais">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"> <img src="asset\icones\insta.svg"
+              alt="Instagram" width="24" height="24" color="width" /></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="asset\icones\in.svg"
+              alt="link" width="24" height="24" color="width" /></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">🐦</a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><img src="asset\icones\in.svg"
+              alt="LinkedIn" width="24" height="24" color="width" /></a>
+        </div>
+      </div>
+
+      <div class="meio">
+        <div class="servicos">
+          <h3>Serviços</h3>
+          <ul>
+            <li><a href="#servico1">Desenvolvimento</a></li>
+            <li><a href="#servico2">SEO</a></li>
+            <li><a href="#servico3">Marketing Digital</a></li>
+            <li><a href="#servico4">Identidade Visual</a></li>
+          </ul>
+        </div>
+
+        <div class="links-rapidos">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portifolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="contatos">
+          <h3>Contatos</h3>
+          <ul>
+            <li><a href="tel:+5511999999999">📞 +55 (11) 99999-9999</a></li>
+            <li><a href="mailto:email@exemplo.com">📧 email@exemplo.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Antes era sucesso-digital, agora texto-esquerda -->
+      <div class="texto-direita">
+        <p>© 2025 Sucesso Digital. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </section>
+</body>
+<script src="script.js"></script>
+
+</html>
